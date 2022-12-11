@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/searchText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Buscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchText" />
+
+    <Button
+        android:id="@+id/restXml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datos XML"
+        app:layout_constraintStart_toEndOf="@+id/search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchText"
+        app:layout_constraintHorizontal_bias=".13"
+        />
+
+    <Button
+        android:id="@+id/restjson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datos JSON"
+        app:layout_constraintStart_toEndOf="@+id/restXml"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchText"
+        app:layout_constraintHorizontal_bias=".73"
+        />
+
+    <Button
+        android:id="@+id/restjsonid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JSON ID"
+        app:layout_constraintStart_toStartOf="@+id/search"
+        app:layout_constraintStart_toEndOf="@+id/search"
+        app:layout_constraintTop_toTopOf="@+id/search"
+        app:layout_constraintHorizontal_bias="1"
+        android:layout_marginTop="84dp"
+        />
+
+    <Button
+        android:id="@+id/restjsonadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JSON POST"
+        app:layout_constraintStart_toStartOf="@+id/restXml"
+        app:layout_constraintEnd_toEndOf="@+id/restXml"
+        app:layout_constraintTop_toBottomOf="@+id/restXml"
+        app:layout_constraintHorizontal_bias=".431"
+        android:layout_marginTop="36dp"
+        />
+
+            <Button
+                android:id="@+id/restjsondelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JSON DELETE"
+                app:layout_constraintStart_toStartOf="@+id/restjson"
+                app:layout_constraintEnd_toEndOf="@+id/restjson"
+                app:layout_constraintTop_toBottomOf="@+id/restjson"
+                app:layout_constraintHorizontal_bias=".431"
+                android:layout_marginTop="36dp"
+                />
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScroll"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        app:layout_constraintHorizontal_bias=".49"
+        app:layout_constraintVertical_bias=".57"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search">
+
+        <TextView
+            android:id="@+id/outText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            />
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
